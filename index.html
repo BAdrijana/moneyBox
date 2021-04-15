@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist\css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title>MoneyBox</title>
+</head>
+<body>
+
+    <!-- ------------- End of Header ----------- -->
+
+    <header>
+        <nav>
+            <div class="header__logo">
+                <a href="#"><img src="assets/logo.svg" alt="logoMoneyBox"></a>
+            </div>
+            <div class="header__menu">
+                <!-- Menu Icon Responsive MENU -->
+                <div class="header__toggle Menu hide-for-desktop">
+                    <div class="menu__icon">
+                          <span class="bars"></span>
+                          <span class="bars"></span>
+                          <span class="bars"></span>
+                    </div>
+                </div>
+
+                <!-- Desktop menu -->
+                <div class="header__dekstop">
+                    <ul class="desktop" >
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li class="login" ><a href="#">Login</a></li>
+                        <li class="button" ><button type="button" class="btn">Get Started <i class="fas fa-angle-right"></i></button></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+
+         <div class="header__mainText container"> 
+            <h1>Find the best bussiness partnerhips</h1>
+            <h2>What kind of partnerhips are you loking for?</h2>
+            <form action="">
+                <div class="form__container">
+                    <div> 
+                        <input type="checkbox" id="projectMenagment" class="onlyOne" name="projectMenagment" value="Project Menagment" onclick="selectOnlyThis(this)" />
+                        <label class="one" for="projectMenagment"> Project Menagment</label> 
+                    </div>
+                    <div>
+                        <input type="checkbox" id="marketing" class="onlyOne" name="marketing" value="Marketing" onclick="selectOnlyThis(this)"/>
+                        <label class="two" for="marketing"> Marketing</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="crm" class="onlyOne" name="crm" value="CRM and sales" onclick="selectOnlyThis(this)"/>
+                        <label class="three" for="crm"> CRM and sales</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="creative" class="onlyOne" name="creative" value="creative and design" onclick="selectOnlyThis(this)"/>
+                        <label class="four" for="creative"> Creative and Design</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sdevelopment" class="onlyOne" name="sdevelopment" value="softwere development" onclick="selectOnlyThis(this)"/>
+                        <label class="five" for="sdevelopment"> Softwere Development</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="task" class="onlyOne" name="task" value="Task Menagment" onclick="selectOnlyThis(this)"/>
+                        <label class="six" for="task"> Task Menagment </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="construction" class="onlyOne" name="construction" value="construction" onclick="selectOnlyThis(this)"/>
+                        <label class="seven" for="construction"> Construction</label>
+                    </div>
+                <div>
+                        <input type="checkbox" id="hr" class="onlyOne" name="hr" value="hr and recruitment" onclick="selectOnlyThis(this)"/>
+                        <label class="eight" for="hr"> HR and Recruitment</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="it" class="onlyOne" name="it" value="it" onclick="selectOnlyThis(this)"/>
+                        <label class="nine" for="it"> IT </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="solutions" class="onlyOne" name="solutions" value="200+ solutions" onclick="selectOnlyThis(this)"/>
+                        <label class="ten" for="solutions"> 200+ Solutions </label>
+                    </div>
+                </div>
+                
+                <button class="btn btn2" type="" value="Submit">Get Started <i class="fas fa-angle-right"></i></button>
+            </form>
+        </div>
+        <div class="header__imgHero">
+            <!-- <img src="assets/hero-image.webp" alt="" class="hero"> -->
+        </div> 
+    </header>
+
+
+<!-- ------------- Main ----------- -->
+
+<main>
+   <div class="container" >
+    <section class="sectionOne">
+        <img src="assets/feature-1.png" alt="feature1img">
+        <div class="main__content">
+            <h3>Find new friends easily</h3>
+            <p>Stay on the same page and make new friends and build your network in one place</p>
+            <div class="main__grid">
+                <div class="fr frOne">
+                    <p><i class="fas fa-minus-square"></i></p>
+                    <h4>Resources</h4>
+                    <p>Stay organised and focus with central spaces for conversation, files, tools and people</p>
+                    <p><i class="fas fa-long-arrow-alt-right"></i></p>
+                </div>
+                <div class="fr frTwo">
+                    <p><i class="fas fa-retweet"></i></i></p>
+                    <h4>World Connect</h4>
+                    <p>Collaborate with aliens at other planets in the same way you do with teams at your own</p>
+                    <p><i class="fas fa-long-arrow-alt-right"></i></p>
+                </div>
+                <div class="fr frThree">
+                    <p><i class="fas fa-comment-alt"></i> </p>
+                    <h4>Messaging</h4>
+                    <p><i class="fas fa-long-arrow-alt-right"></i></p>
+                </div>
+                <div class="fr frFour">
+                    <p><i class="fas fa-video"></i></p>
+                    <h4>Voice and video calls</h4>
+                    <p><i class="fas fa-long-arrow-alt-right"></i></p>
+                </div>
+
+            </div> 
+        </div>
+    </section>
+    
+    <section class="sectionTwo">
+        <img src="assets/feature-2.jpeg" alt="feature-2">
+       
+        <div class="main__content">
+            <h3>What you want, when you want it</h3>
+            <p>Spend less time shuffling tabs with a comprehensive message archive and all your work tools at your fingertips</p>
+            <div class="main__grid">
+                <div class="fr frOne ">
+                    <p><i class="fas fa-puzzle-piece"></i></p>
+                    <h4>Amazing stuff</h4>
+                    <p>Stereamline work by connecting your barin with other services Hello World, and 2000 more </p>
+                    <p><i class="fas fa-long-arrow-alt-right"></i></p>
+                </div>
+                <div class="fr frTwo">
+                    <p><i class="fas fa-magic"></i></p>
+                    <h4>Build life</h4>
+                    <p>Automate routine actions and communication, so you can get back to the kind of work only humans can do</p>
+                    <p><i class="fas fa-long-arrow-alt-right"></i></p>
+                </div>
+                <div class="fr frThree">
+                    <p><i class="fas fa-search"></i></p>
+                    <h4>Search</h4>
+                    <p><i class="fas fa-long-arrow-alt-right"></i></p>
+                </div>
+                <div class=" fr frFour">
+                    <p><i class="far fa-file-alt"></i></p>
+                    <h4>File sharing</h4>
+                    <p><i class="fas fa-long-arrow-alt-right"></i></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+   
+    <section class="sectionOneThree">
+        <img src="assets/feature-2.jpeg" alt="feature-2">
+
+        <div class="main__content">
+            <h3>For teamwork of any size</h3>
+            <p>Hellow supports collaboration across planets with unlimited phone calss and mirrors</p>
+            <div class="main__grid">
+                <div class="fr frOne">
+                    <p><i class="fas fa-lock"></i></p>
+                    <h4>Security</h4>
+                    <p>Protecting your data at every leyer is fundamental to how Hellow works</p>
+                    <p><i class="fas fa-long-arrow-alt-right"></i></p>
+                </div>
+                <div class="fr frTwo">
+                    <p><i class="fas fa-key"></i></p>
+                    <h4>Private key menagement</h4>
+                    <p>Complete control and visibility of access to your data in Slack using your own encryption keys</p>
+                    <p><i class="fas fa-long-arrow-alt-right"></i></p>
+                </div>
+                <div class="fr frThree">
+                    <p><i class="fas fa-cubes"></i> </p>
+                    <h4>Happiness for everyone</h4>
+                    <p><i class="fas fa-long-arrow-alt-right"></i></p>
+                </div>
+            
+            </div> 
+        </div>
+    </section>
+   </div>
+</main>
+
+<!-- ------------- Price ----------- -->
+<div class="prices">
+    <h3>Which Plan is right for you?</h3>
+    <div class="types " >
+        <div class="type1 type">
+           <div class="type_main">
+                <div>
+                    <div class="title">
+                        <img src="assets/price1.svg" alt="">
+                        <h5> Basic </h5>
+                    </div>
+                    <h4>Free</h4>
+                    <p>Make great friends</p>
+                </div>
+
+                <div class="mob " data-container="toggle-1">
+                    <i class="fas fa-arrow-alt-circle-down" ></i>
+                </div>
+           </div>
+            <div class="toggle" id="toggle-1" >
+                <ul >
+                    <li>Sync up 2 devices</li>
+                    <li>Find notes fast with search and tags</li>
+                    <li>Applyrich formatting to your notes</li>
+                    <li>Clip web pages</li>
+                    <li>25MB maximum note size</li>
+                    <li>60MB monthly upload limit</li>
+                </ul>
+                <div class="btn2">Get started</div>
+            </div>
+          
+        </div>
+        <div class="type2 type">
+            <div class="type_main">
+                <div>
+                    <div class="title">
+                        <img src="assets/price2.svg" alt="">
+                        <h5> Premium </h5>
+                    </div>
+                    <h4> <span class="price"></span> 4.99 <span>/month</span></h4>
+                    <p>Be more popular.</p>
+                </div>
+                <div class="mob" data-container="toggle-2">
+                    <i class="fas fa-arrow-alt-circle-down"></i>
+                </div>
+               
+            </div>
+            
+           <div class="toggle" id="toggle-2">
+            <ul >
+                <li><i class="fas fa-long-arrow-alt-left"></i> Everything in Basic</li>
+                <li>Sync unlimited devices</li>
+                <li>Access notes offline</li>
+                <li>Annotate PDFs</li>
+                <li>Search text inside Ofice docs and PDFs</li>
+                <li>Create custom template</li>
+                <li>Customize your Home</li>
+                <li>200MB maximum note size</li>
+                <li>10GB monthly upload limit</li>
+            </ul>
+            <div class="btn2">Try for free</div>
+           </div>
+        </div>
+        <div class="type3 type">
+            <div class="type_main">
+                <div>
+                    <div class="title">
+                        <img src="assets/price3.svg" alt=""> 
+                        <h5>Business</h5>
+                    </div>
+                    <h4> <span class="price"></span> 10.99 <span>/user/month</span></h4>
+                    <p>Collaborate across ypur country.</p>
+                </div>
+
+                <div class="mob" data-container="toggle-3">
+                    <i class="fas fa-arrow-alt-circle-down"></i>
+                </div>
+            </div>
+            
+            <div class="toggle" id="toggle-3">
+                <ul >
+                    <li>Everything in Premium</li>
+                    <li>Work together in shared spaces</li>
+                    <li>See your team's activity history</li>
+                    <li>Centralize account administration</li>
+                    <li>Manage team and data access</li>
+                    <li>Log in fast with single sing on (SSO)</li>
+                    <li>Business data ownership</li>
+                    <li>20GB monthly upload limit + 2GB/user</li>
+                </ul>
+                <div class="btn2">Try for free</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script async src="https://get.geojs.io/v1/ip/geo.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

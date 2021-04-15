@@ -1,0 +1,130 @@
+.prices{
+    padding: 2rem;
+    h3{
+        margin: 1rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .types{
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        .type{
+            margin: 0.5rem;
+            padding: 2rem;
+            border: 2px solid gray;
+            border-radius: 1rem;
+            position: relative;
+            i{
+                display: none;
+            }
+          
+            .title{
+                display: flex;
+                align-items: center;
+                h5{
+                    font-size: 1.1rem;
+                    padding: 0.5rem;
+                    color: gray;
+                    font-weight: 500;
+                }
+            }
+            h4, .price{
+                font-size: 1.8rem; 
+                
+                span{
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                }
+            }
+            p{
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                font-weight: 600;
+                padding: 0.5rem 0;
+            }
+            li{
+                list-style: none;
+                padding: 0.3rem;
+                font-size: 0.9rem;
+                
+            }
+            li:not(:first-child):before { 
+                content:"\2714";
+                color: gray;
+                padding-right: 0.1rem;
+             }
+            
+            .btn2{
+                margin: 1rem 0.5rem;
+                padding: 0.5rem;
+                text-align: center;
+                border: 1px solid gray;
+                cursor: pointer;
+            }
+
+        }
+        .type1{
+            align-items: flex-start;
+        }
+        .type2{
+            border-color: red;
+                h5{
+                    color: red;
+                }
+                li:not(:first-child):before { 
+                    color:#02b52c
+                 }
+                .btn2{
+                    color: #f1f1f1;
+                    background-color: #02b52c;
+                    border: none;
+                }
+                i{
+                    color: #02b52c;
+                }
+        }
+        .type3{
+            border-color: black;
+                h5{
+                    color: black;
+                }
+                .btn2{
+                    color: #f1f1f1;
+                    background-color:black;
+                    border: none;
+                }
+        }
+        img{
+            width: 10%;
+        }
+    }
+    @media(max-width: 768px) {
+        .types{
+            display: block;
+            .type_main{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                i{
+                    font-size: 2rem;
+                }
+            }
+            .toggle-container {
+                transition: height 0.35s ease-in-out;
+                overflow: hidden;
+              }
+            .toggle:not(.active) {
+                display: none;
+              }
+        }
+    }
+    @media(max-width: 1020px) {
+        .types{
+                width: 90% !important;
+            
+        }
+
+    }
+}

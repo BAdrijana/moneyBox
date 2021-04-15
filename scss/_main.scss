@@ -1,0 +1,140 @@
+main{
+    width: 100vw;
+    background-color: #f4ede4;
+    position: relative;
+   
+   
+    section{
+        position: relative;
+        height: auto;
+        img{
+            width: 40%;
+            position: absolute;
+            right: 0px;
+        }
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            padding: 1rem 0;
+        }
+        .main__content{
+            width: 55%;
+            padding: 5rem 1rem;
+            z-index: 455;
+            position: relative;
+        }
+      
+        .main__grid{
+            display: grid;
+            width: 135%;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-areas: 
+            "frOne frTwo frThree"
+            "frOne frTwo frFour";
+            grid-gap: 7px;
+            font-size:0.9rem;
+            .frOne{
+                grid-area: frOne;
+              
+            }
+            .frTwo{
+                grid-area: frTwo;
+            }
+            .frThree{
+                grid-area: frThree;
+            }
+            .frFour{
+                grid-area: frFour;
+            }
+            .fr{
+                padding: 1rem;
+                background-color: white;
+                position: relative;
+                p{
+                   padding: 0.2rem 0;
+                }
+                .fa-long-arrow-alt-right{
+                    font-size: 1.5rem;
+                    position: absolute;
+                    right: 1rem;
+                    bottom: 0.8rem;
+                }
+                
+            }
+            i{
+                font-size: 2rem;
+                padding: 0.2rem;
+            }
+        }
+    }
+    .sectionTwo{
+        img{
+            left:-5rem;
+        }
+       .main__content{
+          margin-left:25%;
+       }
+    }
+    @media(max-width: 1020px) {
+       
+        .main__content{
+            width: 80% !important;
+            margin: 0 auto;
+        } 
+        
+        .main__grid{
+            width: 90%  !important;
+            .fr{
+                p{
+                    font-size: 12px!important;
+                }
+            }
+        }
+    }
+    @media(max-width: 768px) {
+        section{
+           width: 100%;
+           img{
+               width: 50%;
+               position: relative;
+           }
+            .main__content{
+                width: 100% !important;
+            }
+            .main__grid{
+                width: 90%;
+                grid-template-columns: 0.5fr 0.5fr ;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "frOne frOne "
+                "frTwo frTwo"
+                "frThree frFour";
+            }
+        }
+        .sectionTwo{
+            img{
+                left:0rem;
+            }
+           .main__content{
+              margin-left:0%;
+           }
+        }
+    }
+    @media(max-width: 480px) {
+        
+        .main__grid{
+            width: 90%;
+            display: block  !important;
+           .fr{
+               margin: 2rem 0;
+           }
+        }
+    
+    }
+  
+
+}
+
+
